@@ -1,0 +1,19 @@
+{% extends "layout.twig" %}
+
+{% block main %}
+    <hr/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <textarea class="form-control" id="keywords">{{ keywords }}</textarea>
+            </div>
+            <a class="btn btn-info pull-right" href="#" id="search">start search</a>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-12" id="results">
+            <small>search results</small>
+        </div>
+    </div>
+{% endblock %}

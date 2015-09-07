@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8">
+    <title>{% block pagetitle %}Truck Finder{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<div class="container">
+    {% block main %}{% endblock %}
+</div>
+{% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+{% endblock %}
+</body>
+</html>

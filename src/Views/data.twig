@@ -1,0 +1,38 @@
+{% for item in items %}
+    <div class="row">
+        <div class="col-sm-8">
+            <h4 style="margin: 0">{{ item.htmlTitle | raw }}</h4>
+            <small><a href="{{ item.link }}" target="_blank">{{ item.displayLink }}</a></small>
+            <br/><br/>
+            {% for org in item.pagemap.organization if org.telephone or org.email %}
+                <ul class="list-unstyled">
+                    {% if org.name %}
+                        <li>
+                            name: {{ org.name }}
+                        </li>
+                    {% endif %}
+                    {% if org.telephone %}
+                        <li>
+                            telephone: {{ org.telephone }}
+                        </li>
+                    {% endif %}
+                    {% if org.email %}
+                        <li>
+                            email: {{ org.email }}
+                        </li>
+                    {% endif %}
+                    {% if org.description %}
+                        <li>
+                            description: {{ org.description }}
+                        </li>
+                    {% endif %}
+                </ul>
+                <hr/>
+            {% endfor %}
+        </div>
+        <div class="col-sm-4">
+            {{ item.snippet }}
+        </div>
+    </div>
+    <hr/>
+{% endfor %}

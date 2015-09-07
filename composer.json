@@ -1,0 +1,14 @@
+{
+  "require": {
+    "slim/slim": "2.4.*",
+    "slim/views": "dev-master",
+    "twig/twig": "~1.0",
+    "twig/extensions": "~1.0",
+    "symfony/yaml" : "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  }
+}

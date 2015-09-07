@@ -1,0 +1,4 @@
+routes:
+  - [/, default/homepage]
+  - [/search/:query, default/search]
+

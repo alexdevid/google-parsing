@@ -7,17 +7,14 @@ use Services\Search;
 class DefaultController extends Controller {
 
     public function homepage() {
-        $keywords = ['Казахстан', 'грузовики', "покупка", "продажа", "обслуживание", "ремонт", "тягачи", "грузовые авто", "разборка", "запчасти", "автосервис", "грузовиков", "грузовых"];
+        $keywords = ['trucks', "buy", "sell", "maintenance", "repair", "tractor", "lorry", "demolition", "spare", "car", "truck"];
         $keystring = implode(',', $keywords);
-
         return $this->render('homepage.twig', ['keywords' => $keystring]);
     }
 
     public function search($query) {
-        $query = str_replace(', ', '%20', $query);
-        $query = str_replace(' ', '%20', $query);
-        $query = str_replace(',', '%20', $query);
         $api = new Search();
+        var_dump($api->sendRequests($query)); die();
         return $this->render('data.twig', ['items' => $api->sendRequest($query)->getBody()]);
     }
 }

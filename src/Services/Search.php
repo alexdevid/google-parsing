@@ -43,18 +43,18 @@ class Search {
         $this->baseUrl .= (isset($config['fields']) || $config['fields']) ? '&fields=' . $config['fields'] : '';
     }
 
-    public function translateQuery($query) {
-        $translate = new Translate($query);
-
-    }
-
     public function sendRequests($query) {
         $data = [];
         foreach ($this->countries as $countryName => $codes) {
             $cr = '&cr=country' . $codes[0];
             foreach ($codes[1] as $langCode) {
-                $translation = new Translation($query, $langCode);
-                $data[] = $translation->getResult();
+                $string = $query . ' in ' . $countryName;
+                $translation = new Translation($string, $langCode);
+                $res = str_replace(', ', '%20', $translation);
+                $res = str_replace(' ', '%20', $res);
+                $res = str_replace(',', '%20', $res);
+                $this->sendRequest($res);
+                var_dump($this->body);
             }
         }
         return $data;

@@ -1,0 +1,9 @@
+search:
+  key:      AIzaSyAAtzS0w_J0QOuKgEPHEpq8NSvem6MNwNo
+  cx:       015218215461178039152:3nepwgitpa4
+  fields:   queries/request/searchTerms,searchInformation/totalResults,items(htmlTitle,link,displayLink,snippet,pagemap(organization,postaladdress,cse_thumbnail/src))
+  baseUrl:  https://www.googleapis.com/customsearch/v1?
+  localUrl: http://truck-finder.local/
+translate:
+  key:      trnsl.1.1.20150908T130758Z.bc6bf351353786f1.d6c92cdff6ad356dd1490633708dba2ce7f9bb13
+  baseUrl:  https://translate.yandex.net/api/v1.5/tr.json/translate?

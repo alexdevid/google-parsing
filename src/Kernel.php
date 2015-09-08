@@ -32,6 +32,7 @@ class Kernel {
      */
     public function run() {
         $this->routes = Yaml::parse(file_get_contents(__DIR__ . '/../config/routes.yml'))['routes'];
+        $this->config = Yaml::parse(file_get_contents(__DIR__ . '/../config/config.yml'));
         $this->app = new \Slim\Slim([
             'view' => new Twig()
         ]);

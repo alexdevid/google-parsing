@@ -1,0 +1,15 @@
+#CountryName: [CountryISOCode, [lang2, lang3, ...]]
+#https://tech.yandex.ru/translate/doc/dg/concepts/langs-docpage/
+#http://www.nationsonline.org/oneworld/country_code_list.htm
+countries:
+  Armenia:      [AM, [hy, ru]]
+  Azerbaijan:   [AZ, [az, ru]]
+  Belarus:      [BY, [be, ru]]
+  Kazakhstan:   [KZ, [kk, ru]]
+  Kyrgyzstan:   [KG, [ky, ru]]
+  Moldova:      [MD, [ro, ru]]
+  Tajikistan:   [TJ, [tg, ru]]
+  Uzbekistan:   [UZ, [uz, ru]]
+  Ukraine:      [UA, [uk, ru]]
+  Turkmenistan: [TM, [ru]]
+  Georgia:      [GE, [ka, ru]]

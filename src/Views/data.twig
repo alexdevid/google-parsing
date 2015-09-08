@@ -4,7 +4,7 @@
             <h4 style="margin: 0">{{ item.htmlTitle | raw }}</h4>
             <small><a href="{{ item.link }}" target="_blank">{{ item.displayLink }}</a></small>
             <br/><br/>
-            {% for org in item.pagemap.organization if org.telephone or org.email %}
+            {% for org in item.organizations %}
                 <ul class="list-unstyled">
                     {% if org.name %}
                         <li>
@@ -27,7 +27,6 @@
                         </li>
                     {% endif %}
                 </ul>
-                <hr/>
             {% endfor %}
         </div>
         <div class="col-sm-4">

@@ -4,51 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85d48a9b99906512c9beac150400e4b1",
+    "hash": "d7f158af212bcef472df296ad6ad13c6",
     "packages": [
-        {
-            "name": "google/apiclient",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "066668986ea099d406098ba0bb2a61cc51f5a0de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/066668986ea099d406098ba0bb2a61cc51f5a0de",
-                "reference": "066668986ea099d406098ba0bb2a61cc51f5a0de",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Client library for Google APIs",
-            "homepage": "http://developers.google.com/api-client-library/php",
-            "keywords": [
-                "google"
-            ],
-            "time": "2015-08-20 18:54:11"
-        },
         {
             "name": "slim/slim",
             "version": "2.4.3",
@@ -147,47 +104,6 @@
                 "templating"
             ],
             "time": "2014-12-09 23:48:51"
-        },
-        {
-            "name": "sneakybobito/google-url",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gsouf/google-url.git",
-                "reference": "1a2c875f19bf2a997b07142bf2de9d53ee32ecaf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gsouf/google-url/zipball/1a2c875f19bf2a997b07142bf2de9d53ee32ecaf",
-                "reference": "1a2c875f19bf2a997b07142bf2de9d53ee32ecaf",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "GoogleUrl": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3"
-            ],
-            "authors": [
-                {
-                    "name": "Soufiane Ghzal",
-                    "email": "sghzal@gmail.com"
-                }
-            ],
-            "description": "Manipulate google searches and SERP",
-            "homepage": "https://github.com/SneakyBobito/google-url",
-            "keywords": [
-                "SERP",
-                "google"
-            ],
-            "time": "2015-07-28 18:27:22"
         },
         {
             "name": "symfony/yaml",
@@ -357,9 +273,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "slim/views": 20,
-        "symfony/yaml": 20,
-        "google/apiclient": 20,
-        "sneakybobito/google-url": 20
+        "symfony/yaml": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
